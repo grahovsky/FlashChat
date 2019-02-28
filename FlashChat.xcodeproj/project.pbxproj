@@ -8,20 +8,32 @@
 
 /* Begin PBXBuildFile section */
 		B5DB2A03222873FA0078547B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DB2A02222873FA0078547B /* AppDelegate.swift */; };
-		B5DB2A05222873FA0078547B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DB2A04222873FA0078547B /* ViewController.swift */; };
+		B5DB2A05222873FA0078547B /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DB2A04222873FA0078547B /* ChatViewController.swift */; };
 		B5DB2A08222873FA0078547B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5DB2A06222873FA0078547B /* Main.storyboard */; };
 		B5DB2A0A222873FB0078547B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B5DB2A09222873FB0078547B /* Assets.xcassets */; };
 		B5DB2A0D222873FB0078547B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5DB2A0B222873FB0078547B /* LaunchScreen.storyboard */; };
+		B5DB2A162228765F0078547B /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DB2A152228765F0078547B /* Message.swift */; };
+		B5DB2A1D222877560078547B /* CustomMessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DB2A1B222877560078547B /* CustomMessageCell.swift */; };
+		B5DB2A1E222877560078547B /* CustomMessageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B5DB2A1C222877560078547B /* CustomMessageCell.xib */; };
+		B5DB2A202228780F0078547B /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DB2A1F2228780F0078547B /* LogInViewController.swift */; };
+		B5DB2A22222878330078547B /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DB2A21222878330078547B /* RegisterViewController.swift */; };
+		B5DB2A24222878560078547B /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DB2A23222878560078547B /* WelcomeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		B5DB29FF222873FA0078547B /* FlashChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FlashChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5DB2A02222873FA0078547B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		B5DB2A04222873FA0078547B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B5DB2A04222873FA0078547B /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
 		B5DB2A07222873FA0078547B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B5DB2A09222873FB0078547B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B5DB2A0C222873FB0078547B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B5DB2A0E222873FB0078547B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B5DB2A152228765F0078547B /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		B5DB2A1B222877560078547B /* CustomMessageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomMessageCell.swift; sourceTree = "<group>"; };
+		B5DB2A1C222877560078547B /* CustomMessageCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomMessageCell.xib; sourceTree = "<group>"; };
+		B5DB2A1F2228780F0078547B /* LogInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
+		B5DB2A21222878330078547B /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		B5DB2A23222878560078547B /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,11 +66,10 @@
 		B5DB2A01222873FA0078547B /* FlashChat */ = {
 			isa = PBXGroup;
 			children = (
-				B5DB2A02222873FA0078547B /* AppDelegate.swift */,
-				B5DB2A04222873FA0078547B /* ViewController.swift */,
-				B5DB2A06222873FA0078547B /* Main.storyboard */,
+				B5DB2A17222876670078547B /* Model */,
+				B5DB2A18222876830078547B /* View */,
+				B5DB2A19222876C10078547B /* Controller */,
 				B5DB2A09222873FB0078547B /* Assets.xcassets */,
-				B5DB2A0B222873FB0078547B /* LaunchScreen.storyboard */,
 				B5DB2A142228751D0078547B /* Supporting Files */,
 			);
 			path = FlashChat;
@@ -70,6 +81,45 @@
 				B5DB2A0E222873FB0078547B /* Info.plist */,
 			);
 			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B5DB2A17222876670078547B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B5DB2A152228765F0078547B /* Message.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B5DB2A18222876830078547B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B5DB2A06222873FA0078547B /* Main.storyboard */,
+				B5DB2A0B222873FB0078547B /* LaunchScreen.storyboard */,
+				B5DB2A1A222877020078547B /* Custom Cell */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B5DB2A19222876C10078547B /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				B5DB2A02222873FA0078547B /* AppDelegate.swift */,
+				B5DB2A04222873FA0078547B /* ChatViewController.swift */,
+				B5DB2A1F2228780F0078547B /* LogInViewController.swift */,
+				B5DB2A21222878330078547B /* RegisterViewController.swift */,
+				B5DB2A23222878560078547B /* WelcomeViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		B5DB2A1A222877020078547B /* Custom Cell */ = {
+			isa = PBXGroup;
+			children = (
+				B5DB2A1B222877560078547B /* CustomMessageCell.swift */,
+				B5DB2A1C222877560078547B /* CustomMessageCell.xib */,
+			);
+			path = "Custom Cell";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -132,6 +182,7 @@
 			files = (
 				B5DB2A0D222873FB0078547B /* LaunchScreen.storyboard in Resources */,
 				B5DB2A0A222873FB0078547B /* Assets.xcassets in Resources */,
+				B5DB2A1E222877560078547B /* CustomMessageCell.xib in Resources */,
 				B5DB2A08222873FA0078547B /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -143,8 +194,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B5DB2A05222873FA0078547B /* ViewController.swift in Sources */,
+				B5DB2A162228765F0078547B /* Message.swift in Sources */,
+				B5DB2A05222873FA0078547B /* ChatViewController.swift in Sources */,
+				B5DB2A1D222877560078547B /* CustomMessageCell.swift in Sources */,
+				B5DB2A22222878330078547B /* RegisterViewController.swift in Sources */,
+				B5DB2A202228780F0078547B /* LogInViewController.swift in Sources */,
 				B5DB2A03222873FA0078547B /* AppDelegate.swift in Sources */,
+				B5DB2A24222878560078547B /* WelcomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -292,7 +348,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = FZZ457X95J;
-				INFOPLIST_FILE = FlashChat/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/FlashChat/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -310,7 +366,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = FZZ457X95J;
-				INFOPLIST_FILE = FlashChat/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/FlashChat/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
