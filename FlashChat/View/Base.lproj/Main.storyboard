@@ -13,7 +13,7 @@
         <!--Welcome-->
         <scene sceneID="19R-TY-Ycx">
             <objects>
-                <viewController storyboardIdentifier="welcomeVC" id="HgL-Pz-FgB" customClass="WelcomeViewController" customModule="Flash_Chat" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="welcomeVC" id="HgL-Pz-FgB" customClass="WelcomeViewController" customModule="FlashChat" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="opJ-K9-nG8"/>
                         <viewControllerLayoutGuide type="bottom" id="6IO-ir-Tan"/>
@@ -32,6 +32,9 @@
                                     <color key="titleColor" red="1" green="0.99997437" blue="0.99999129769999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <segue destination="319-zY-kGX" kind="push" id="1sr-WR-e1A"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rte-Wg-iqD">
                                 <rect key="frame" x="0.0" y="577" width="375" height="45"/>
@@ -79,7 +82,7 @@
         <!--Register-->
         <scene sceneID="ggR-Sd-SUX">
             <objects>
-                <viewController storyboardIdentifier="registrationVC" id="fO7-uF-Zta" customClass="RegisterViewController" customModule="Flash_Chat" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="registrationVC" id="fO7-uF-Zta" customClass="RegisterViewController" customModule="FlashChat" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="7Nw-LH-tzv"/>
                         <viewControllerLayoutGuide type="bottom" id="odC-kV-RE6"/>
@@ -108,7 +111,7 @@
                                             <constraint firstAttribute="height" constant="30" id="Ej5-hV-ovH"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EuO-jM-OLH">
                                         <rect key="frame" x="16" y="165" width="343" height="30"/>
@@ -168,7 +171,7 @@
         <!--Log In-->
         <scene sceneID="J7t-eU-htt">
             <objects>
-                <viewController storyboardIdentifier="logInVC" id="319-zY-kGX" customClass="LogInViewController" customModule="Flash_Chat" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="logInVC" id="319-zY-kGX" customClass="LogInViewController" customModule="FlashChat" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="gJd-m6-qaK"/>
                         <viewControllerLayoutGuide type="bottom" id="igF-Jf-WAL"/>
@@ -186,7 +189,7 @@
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="N0d-3w-gjV">
                                         <rect key="frame" x="16" y="126" width="343" height="30"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="10R-aX-4i6">
                                         <rect key="frame" x="16" y="164" width="343" height="30"/>
@@ -247,7 +250,7 @@
         <!--Flash Chat-->
         <scene sceneID="2IL-fe-f7c">
             <objects>
-                <viewController storyboardIdentifier="chatVC" id="Vu7-u5-WVm" customClass="ChatViewController" customModule="Flash_Chat" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="chatVC" id="Vu7-u5-WVm" customClass="ChatViewController" customModule="FlashChat" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="8gI-x8-tja"/>
                         <viewControllerLayoutGuide type="bottom" id="y8W-QX-8Qu"/>
